@@ -2,11 +2,11 @@ package entities;
 
 import java.util.Random;
 
-public class Employee {
+public abstract class Employee {
     //ATTRIBUTES LIST:
-    private long serialNumber;
-    private double salary;
-    private Departments department;
+    protected long serialNumber;
+    protected double salary;
+    protected Departments department;
 
 
     //CONSTRUCTOR:
@@ -35,4 +35,7 @@ public class Employee {
     public void setDepartment(Departments department) {
         this.department = department;
     }
+
+    //ABSTRACT METHODS:
+    public abstract void calculateSalary();
 }
