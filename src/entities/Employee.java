@@ -1,8 +1,10 @@
 package entities;
 
+import interfaces.CheckIn;
+
 import java.util.Random;
 
-public abstract class Employee {
+public abstract class Employee implements CheckIn {
     //ATTRIBUTES LIST:
     protected long serialNumber;
     protected double salary;
@@ -38,4 +40,10 @@ public abstract class Employee {
 
     //ABSTRACT METHODS:
     public abstract void calculateSalary();
+
+    //INTERFACES
+    @Override
+    public void checkIn() {
+        System.out.println("My working time is from 8.00 am to 6.00 pm");
+    }
 }
