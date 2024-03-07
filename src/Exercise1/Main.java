@@ -20,5 +20,11 @@ public class Main {
             System.out.println("Salary: " + currentEmployee.getSalary());
         }
 
+        employee1.setDepartment(Departments.SALES);
+        System.out.println("These are the details for the employee1:");
+        System.out.println("Serial number: " + employee1.getSerialNumber());
+        System.out.println("Department: " + employee1.getDepartment());
+        System.out.println("Salary: " + employee1.getSalary());
+
     }
 }
